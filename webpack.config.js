@@ -18,15 +18,12 @@ module.exports = [
         {
           test: /\.(js|jsx)$/,
           use: {
-            loader: "babel-loader",
-            options: {
-              presets: ["env", "stage-2", "react"]
-            }
+            loader: "babel-loader"
           },
           exclude: /node_modules/
         },
         {
-          test: /\.scss$/,
+          test: /\.(css|scss)$/,
           use: ExtractTextPlugin.extract([
             {
               loader: "css-loader",
@@ -83,10 +80,7 @@ module.exports = [
         {
           test: /\.(js|jsx)$/,
           use: {
-            loader: "babel-loader",
-            options: {
-              presets: ["env", "stage-2", "react"]
-            }
+            loader: "babel-loader"
           },
           exclude: /node_modules/
         },
