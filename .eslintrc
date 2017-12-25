@@ -12,5 +12,9 @@
       "jsx": true
     },
     "sourceType": "module"
+  },
+  "rules": {
+    "react/prefer-stateless-function": 0,
+    "react/no-array-index-key": 0
   }
 }
